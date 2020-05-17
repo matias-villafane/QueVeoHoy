@@ -1,0 +1,27 @@
+{
+  "name": "queveohoy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servidor/servidor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon servidor/servidor.js",
+    "start": "node servidor/servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matias-villafane/QueVeoHoy.git"
+  },
+  "author": "Matias Gabriel Villafañe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matias-villafane/QueVeoHoy/issues"
+  },
+  "homepage": "https://github.com/matias-villafane/QueVeoHoy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
