@@ -34,7 +34,8 @@ function getRecomendacion(req, res) {
     
     let paramsSQL = sqlBuilder(req);
 
-    const sql = `SELECT * FROM pelicula p JOIN genero g ON p.genero_id = g.id${paramsSQL.sqlWhere}${paramsSQL.sqlOrder}${paramsSQL.sqlLimit}`;
+    const sql = `SELECT p.* FROM pelicula p JOIN genero g ON p.genero_id = g.id${paramsSQL.sqlWhere}${paramsSQL.sqlOrder}${paramsSQL.sqlLimit}`;
+
 
     console.log(sql);
 
@@ -111,7 +112,7 @@ function sqlBuilder(req){
     let sqlOrder = '';
     let sqlLimit = ''
     let keys = Object.keys(req.query);
-    
+
     keys.forEach(key => {
         switch (key) {
             case "titulo":
